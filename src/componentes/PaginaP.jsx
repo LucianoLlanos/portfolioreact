@@ -1,7 +1,9 @@
 import React from 'react'
-import css from '../stilos/PaginaP.css'
 import foto from '../recursos/WhatsApp Image 2025-04-02 at 20.36.49.png'
-import home from '../componentes/home';
+import Home from './Home';
+import { Link } from 'react-router-dom';
+import css from'../stilos/PaginaP.css'
+
 
 const PaginaP = () => {
   return (
@@ -20,9 +22,9 @@ const PaginaP = () => {
       <p style={{ textAlign: 'center', fontSize: 'x-large' }}>
         Haz clic aquí abajo para saber más sobre mí
       </p>
-      <a href={home}>
-        <button className="btn">Adelante</button>
-      </a>
+      <Link to="/Home">
+         <button className="btn">Adelante</button>
+      </Link>
     </div>
   </div>
 </div>
